@@ -16,7 +16,7 @@ This set of commands is used to make changes, save them and push them to the rem
 
 First, add the files to git
 ```bash
-git add .
+git add -A
 ```
 (`.` will add all files and folders, so file names in its place can be used to add files specifically)
 
