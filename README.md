@@ -102,7 +102,7 @@ git push -f origin master
 
 
 ## Delete Changes
-To delete all changes made to repo since last commit
+To save all changes made to working directory away and revert it to match the HEAD (last) commit
 ```bash
 git stash -u
 ```
