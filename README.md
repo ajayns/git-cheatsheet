@@ -109,7 +109,7 @@ git checkout .
 ```
 (`clean` is used to clear all changes made to tracked files while `checkout .` deletes all untracked files)
 
-To save all changes made to working directory away and revert it to match the HEAD (last) commit
+Alternatively, to save all changes made to working directory away and revert it to match the HEAD (last) commit
 ```bash
 git stash -u
 ```
