@@ -90,7 +90,7 @@ git checkout master
 
 Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch: 
 ```bash
-git rebase master
+git rebase upstream/master
 ```
 (These same steps can be done for branches other than master also)
 
