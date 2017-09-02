@@ -70,6 +70,12 @@ git checkout master
 git merge <branch-name>
 ```
 
+Fetching a branch from remote and track it locally by adding new branch to the local repo
+```bash
+git fetch <remote> <branch-name>:<local-branch-name>
+```
+
+
 ## Syncing a forked repo
 Clone the remote repo to local system and the following setups will bring the local and remote repos up to date with the source repo.
 
