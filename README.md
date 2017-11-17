@@ -74,8 +74,6 @@ Fetching a branch from remote and track it locally by adding new branch to the l
 ```bash
 git fetch <remote> <branch-name>:<local-branch-name>
 ```
-
-
 ## Syncing a forked repo
 Clone the remote repo to local system and the following setups will bring the local and remote repos up to date with the source repo.
 
@@ -106,6 +104,34 @@ git push -f origin master
 ```
 (Use the `-f` only when first rebase)
 
+*ALT:*
+
+Add the source remote (where you cloned from) to git, calling it upstream
+```bash
+git remote add upstream <repo:url>
+```
+Fetch all branches from upstream
+```bash
+git fetch upstream
+```
+Merge by pull
+```bash
+git pull upstream master
+```
+
+
+## Squashing commits
+Squashing previous 'n'commits into one new commit
+```bash
+// Assuming you want to squash previous 2 commits
+// HEAD~n specifies number of commits to squash
+git reset --soft HEAD~2 && git commit -m 'New commit message here'
+```
+To squash in interactive rebase mode
+```bash
+git rebase -i HEAD~2
+```
+Follow the steps after this screen, to select and merge from terminal itself.
 
 ## Delete Changes
 Discards all changes made in working directory
