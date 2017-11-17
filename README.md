@@ -107,6 +107,15 @@ git push -f origin master
 (Use the `-f` only when first rebase)
 
 
+## Squashing commits
+Squashing previous 'n'commits into one new commit
+```bash
+// Assuming you want to squash previous 2 commits
+// HEAD~n specifies number of commits to squash
+git reset --soft HEAD~2 && git commit -m 'New commit message here'
+```
+
+
 ## Delete Changes
 Discards all changes made in working directory
 ```bash
