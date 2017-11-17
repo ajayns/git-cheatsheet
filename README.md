@@ -127,11 +127,13 @@ Squashing previous 'n'commits into one new commit
 // HEAD~n specifies number of commits to squash
 git reset --soft HEAD~2 && git commit -m 'New commit message here'
 ```
+
 To squash in interactive rebase mode
 ```bash
 git rebase -i HEAD~2
 ```
 Follow the steps after this screen, to select and merge from terminal itself.
+
 
 ## Delete Changes
 Discards all changes made in working directory
