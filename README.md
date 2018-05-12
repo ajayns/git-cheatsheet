@@ -148,3 +148,18 @@ Alternatively, to save all changes made to working directory away and revert it 
 git stash -u
 ```
 
+## Remotes
+View all of the remotes
+```bash
+git remote -v
+```
+
+Add a new remote
+```bash
+git remote add <remote-name> <remote-url>
+```
+
+Changing an exising remote's URL
+```bash
+git remote set-url <remote-name> <new-remote-url>
+```
