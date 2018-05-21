@@ -163,3 +163,15 @@ Changing an exising remote's URL
 ```bash
 git remote set-url <remote-name> <new-remote-url>
 ```
+
+## Undo Commit
+To undo 1 commit
+```bash
+git reset HEAD~1
+```
+
+## Amend Commit Message
+To change the commit message of last commit, which is not pushed
+```bash
+git commit --amend
+```
