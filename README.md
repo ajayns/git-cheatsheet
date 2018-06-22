@@ -148,6 +148,17 @@ Alternatively, to save all changes made to working directory away and revert it 
 git stash -u
 ```
 
+## Delete Branch
+Locally delete branch:
+```bash
+git branch -D <branch-name>
+```
+
+Delete remote branch:
+```bash
+git push <remote_name> --delete <branch_name>
+```
+
 ## Remotes
 View all of the remotes
 ```bash
